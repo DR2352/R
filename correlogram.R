@@ -1,0 +1,5 @@
+library("corrplot")
+data("mtcars") 
+corr_matrix <- cor(mtcars)
+corrplot(corr_matrix)
+corrplot(corr_matrix,method = 'number',type = "lower")
